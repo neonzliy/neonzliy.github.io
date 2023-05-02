@@ -24,6 +24,10 @@ common-js:
 <!-- Beautiful Jekyll 5.0.0 | Copyright Dean Attali 2020 -->
 {% include head.html %}
 
+{% if page.url == '/' %}
+<link rel="stylesheet" href="{{ '/assets/css/home.css' | absolute_url }}">
+{% endif %}
+
 <body>
 
   {% include gtm_body.html %}
