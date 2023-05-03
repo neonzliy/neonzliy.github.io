@@ -1,10 +1,10 @@
 ---
 layout: home
-title: "Welcome to my website"
+title: "Leon Zhao - Explorer, ML Advocate, Behavior Designer"
 ---
 
-# Welcome to my website!
+### bio
 
-This is the homepage of my website, built with Beautiful Jekyll.
+Abundant experience in research and experimentation in machine learning and data mining. Seasoned with industry experience and passionate about developing quantitative solutions for unstructured business problems.
 
 You can edit this file (index.md) to customize the content of your homepage.
