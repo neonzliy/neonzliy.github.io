@@ -1,6 +1,7 @@
 ---
 layout: page
-title: "Leon Zhao - Explorer, ML Advocate, Behavior Designer"
+title: "Leon Zhao"
+subtitle: "Explorer, ML Advocate, Behavior Designer"
 ---
 
 ### bio
