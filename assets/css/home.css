@@ -1,4 +1,193 @@
+/* Inspired via ocram85/ocram85.github.io */
+
+/* ------ Overrides ------ */
+
+body {
+    margin: 0;
+}
+
+h1 { font-weight: 400; }
+h2 { font-weight: 300; }
+h3 { font-weight: 300; }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Avenir','Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+body, a {
+    font-family: 'Avenir', 'Lora', 'Times New Roman', serif;
+}
+
+.intro-header .page-heading .page-subheading, .post-preview .post-meta, .post-heading .post-meta {
+    font-family: 'Avenir', 'Lora', 'Times New Roman', serif;
+}
+
+.post-preview .post-meta {
+   font-size: 14px;
+   font-style: normal;
+}
+.intro-header .post-heading .post-subheading {
+   font-size: 20px;
+}
+
+.intro-header.big-img .page-heading,
+.intro-header.big-img .post-heading {
+  color: #363636;
+  text-shadow: 1px 1px 8px rgb(240,240,240);
+}
+
+/* ----- Search Bar -------*/
+.nav-search-link .nav-search-icon {
+  display: none;
+}
+
+.nav-search-link .nav-search-text {
+  display: inline;
+}
+
+@media only screen and (min-width: 768px) {
+  .nav-search-link .nav-search-icon {
+    display: inline;
+}
+
+.nav-search-link .nav-search-text {
+    display: none;
+}
+
+/* ----- Card section ----- */
+a.project-link:link,
+a.project-link:visited {
+    text-decoration: none;
+    color: #404040;
+}
+
+a.project-link:hover {
+    text-decoration: none;
+    color: #0085a1;
+}
+
+.project-card {
+    padding: 10px;
+    width: 230px;
+    min-height: 300px;
+    /* Need to fix horzontal alignment for grid system */
+    float: none;
+    margin: 0 auto 25px auto;
+}
+.project-card h3 {
+    margin: 10px;
+}
+.project-card p.text-muted {
+    /*padding: 0px;*/
+    margin-top: 15px;
+    margin-bottom: 10px;
+    min-height: 5em;
+}
+
+.seperator {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border-color: #aaa;
+}
+
+/* -------- Other -------- */
+
+.stack-color {
+    color: #404040;
+}
+
+.spacer {
+    height: 10px;
+    padding: 0;
+    margin: 5px;
+}
+
+.text-muted {
+    color: #808080;
+    font-size: 14px;
+}
+
+.hd-shadow {
+    text-shadow: 4px 4px 4px #aaa;
+}
+
+.post-preview-box {
+    background-image: url('/img/concrete-texture.png');
+    background-attachment: scroll;
+    border-style: 0px;
+    border-radius: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-shadow: 1px 1px 10px #bbb;
+}
+
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.alexa-link {
+    max-height:120px;
+    overflow: hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: 3;
+-webkit-box-orient: vertical;
+}
+.alexa-link img {
+    max-height: 100px;
+    max-width: 100px
+}
+
+.alexa-link:after {
+    /* Clear the box */
+    content: "";display: table;clear: both;
+}
+.alexa-link span.description {
+    display:none;
+}
+[tooltip]:before {
+    position : absolute;
+     content : attr(tooltip);
+     opacity : 0;
+}
+[tooltip]:hover:before {
+    opacity : 1;
+}
+[tooltip]:not([tooltip-persistent]):before {
+    pointer-events: none;
+}
+
+/*.alexa-link table {
+    max-height:100px;
+}
+*/
+/*.alexa-link table tr {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}*/
+
+.alexa-link .title {
+    float:left;
+    margin: 0;
+}
+.amazon-link .description {
+    font-size: small;
+    float:left;
+}
+.amazon-link .image {
+    margin:0; float:right;
+}
+
+
 /* Hero section */
+/*
 .hero {
   background-color: #f8f9fa;
   padding: 100px 0;
@@ -28,4 +217,4 @@
 
 .hero-cta:hover {
   background-color: #0056b3;
-}
+}*/
