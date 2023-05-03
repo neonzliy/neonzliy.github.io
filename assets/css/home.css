@@ -1,3 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&display=swap');
+/* Font */
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+/* Font size and color */
+h1, h2, h3, h4, h5, h6 {
+  color: #333;
+}
+
+p {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Links */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0056b3;
+  text-decoration: none;
+}
+
+/* Nav bar */
+.navbar {
+  background-color: #f8f9fa;
+  border: none;
+}
+
+.navbar a {
+  color: #333;
+}
+
+.navbar a:hover {
+  color: #007bff;
+}
+
+
 /* Hero section */
 .hero {
   background-color: #f8f9fa;
