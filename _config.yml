@@ -10,10 +10,13 @@
 ############################
 
 # Name of website
-title: Leon Personal Site
+title: leonz.site
+
+# Short description of your site
+description: "A personal blog all about neonz."
 
 # Your name to show in the footer
-author: Leon Zhao
+author: neonz
 
 ###############################################
 # --- List of links in the navigation bar --- #
@@ -22,6 +25,7 @@ author: Leon Zhao
 navbar-links:
   Home: "/"
   Writing: "blog"
+  About: "aboutme"
 
 ################
 # --- Logo --- #
@@ -50,6 +54,7 @@ social-network-links:
   github: neonzliy
   linkedin: liyangzhao705
   instagram: steelephant
+  douban: SteelZhao
 #   rss: true  # remove this line if you don't want to show an RSS link at the bottom
 #   facebook: deanattali
 #   twitter: daattali
