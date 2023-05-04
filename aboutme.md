@@ -18,15 +18,15 @@ and discovering new stuff.
 ### <i class="fa fa-cubes" aria-hidden="true"></i> Skills
 *Here comes a list of subjects I've worked with, grouped by topics...*
 
-#### Scripting and Programming Languages
+#### <i class="fa-brands fa-tiktok"></i> Scripting and Programming Languages
 
 Python (PyData,SciPy,TensorFlow) &bull; R (dplyr,ggplot2,shiny) &bull; DBs (HQL,Presto,PostgreSQL) &bull; JavaScript, PHP (for web-based visualization or apps) &bull; Hadoop,Spark,Flink &bull; Airflow,Docker,Kubernetes
 
-#### Data Science Stacks
+#### <i class="fa-brands fa-tiktok"></i> Data Science Stacks
 
 Rflex Based Models (Binary Classification, Regression, Structured Prediction) &bull; Feature Selection and Dimensionality Reduction &bull; Time Series Analysis &bull; Inferential Statistics &bull; Multi-Armed Bandit
 
-#### Domain Knowledges
+#### <i class="fa-brands fa-tiktok"></i> Domain Knowledges
 
 Enterprise Level Experiments (ELE) &bull; Behavioral Design &bull; Advertisement Platform &bull; Marketplace Optimization &bull; Marketplace Monetization &bull; Citrix Cloud Platform Business Manager
 
