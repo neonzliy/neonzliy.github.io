@@ -2,7 +2,7 @@
 layout: page
 title: Writings
 permalink: /writings/
-css:'assets/css/home.css'
+css: '/assets/css/home.css'
 ---
 
 {% for post in site.posts %}
