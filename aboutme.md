@@ -11,8 +11,8 @@ Hello, my name is Leon Zhao and I live in greater Seattle area on the west coast
 
 ### <i class="fa fa-lightbulb" aria-hidden="true"></i> Interests
 
-Like everyone else in the industry, I'm obsessed with ChatGPT lately. Besides I'm very interested in **PowerShell**, **DevOps**, **Phabricator** and **Software Engineering** in general. I love
-exploring [Github](https://github.com/){:target="_blank"}, [Stackoverflow](https://stackoverflow.com/){:target="_blank"} or [KDD.org](https://kdd.org/){:target="_blank"}
+Like everyone else in the industry, I'm obsessed with ChatGPT lately. Besides I'm very interested in **Mechine Learning**, **Experiment Design**, **Causal Inference** and **Software Engineering** in general. I love
+exploring [Github](https://github.com/){:target="_blank"}, [Stackoverflow](https://stackoverflow.com/){:target="_blank"} or [Kaggle](https://kaggle.com/){:target="_blank"}
 and discovering new stuff.
 
 ### <i class="fa fa-cubes" aria-hidden="true"></i> Skills
