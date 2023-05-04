@@ -39,9 +39,9 @@ I xxxx
 **2022**&nbsp;&nbsp; Network for Slack
 I xxxx
 
-·   	Lead the DS project that involves developing a deduction-based model comprising 47 components to produce a unified Grid health score. This will aid enterprise customers in comprehending their Slack usage.
-·   	Improved the data foundation for Slack Connect by redesigning and constructing pipelines that meet modeling and analytical requirements, significantly improved the data accessibility. 
-·   	Introduced Enterprise Level Experiments (ELE) concept to the team and initiated collaboration with Slack experimentation platform to realize the statistical methods and tests enable ELE within the enterprise team.
+-   	Lead the DS project that involves developing a deduction-based model comprising 47 components to produce a unified Grid health score. This will aid enterprise customers in comprehending their Slack usage.
+-   	Improved the data foundation for Slack Connect by redesigning and constructing pipelines that meet modeling and analytical requirements, significantly improved the data accessibility. 
+-   	Introduced Enterprise Level Experiments (ELE) concept to the team and initiated collaboration with Slack experimentation platform to realize the statistical methods and tests enable ELE within the enterprise team.
 
 #### 2021 - 2022 [TikTok](https://tiktik.com) **Sr.Data Scientist**
 
