@@ -1,7 +1,8 @@
 ---
-layout: home
+layout: page
 permalink: "me"
 title: About me
+css: '/assets/css/home.css'
 ---
 
 Hello, my name is Leon Zhao and I live in greater Seattle area on the west coast.
