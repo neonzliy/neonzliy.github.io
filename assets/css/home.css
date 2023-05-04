@@ -14,11 +14,11 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Avenir','Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 body, a {
-    font-family: 'Avenir', 'Lora', 'Times New Roman', serif;
+    font-family: 'Avenir', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .intro-header .page-heading .page-subheading, .post-preview .post-meta, .post-heading .post-meta {
-    font-family: 'Avenir', 'Lora', 'Times New Roman', serif;
+    font-family: 'Avenir', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .post-preview .post-meta {
