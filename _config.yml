@@ -24,8 +24,8 @@ author: neonz
 
 navbar-links:
   Home: "/"
-  Writing: "blog"
-  Me: "aboutme"
+  Writing: "writing"
+  Me: "me"
 
 ################
 # --- Logo --- #
