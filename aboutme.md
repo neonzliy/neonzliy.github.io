@@ -8,7 +8,7 @@ Hello, my name is Leon Zhao and I live in greater Seattle area on the west coast
 
 
 
-### <i class="fa fa-lightbulb-o" aria-hidden="true"></i> Interests
+### <i class="fa fa-lightbulb" aria-hidden="true"></i> Interests
 
 Like everyone else in the industry, I'm obsessed with ChatGPT lately. Besides I'm very interested in **PowerShell**, **DevOps**, **Phabricator** and **Software Engineering** in general. I love
 exploring [Github](https://github.com/){:target="_blank"}, [Stackoverflow](https://stackoverflow.com/){:target="_blank"} or [KDD.org](https://kdd.org/){:target="_blank"}
@@ -41,7 +41,7 @@ Enterprise Level Experiments (ELE) &bull; Behavioral Design &bull; Advertisement
 
 #### 2021 - 2022 [TikTok](https://tiktik.com) **Sr.Data Scientist**
 
-<i class="fab fa-tiktok" aria-hidden="true"></i> **TikTok**&nbsp;&nbsp;
+<i class="fa-brands fa-tiktok"></i> **TikTok**&nbsp;&nbsp;
 
 -   	Designed, executed, and consulted split tests for new product launches and provided insights to guide the team on the next steps on both product and experimentation platform end.
 -   	Investigated TikTok Ads experimentation platform horizontally and provided best practices and guidelines for statistical methods and tests to accommodate pain points such as low sample size, pre-existing biases etc. 
