@@ -5,17 +5,14 @@ title: About me
 css: '/assets/css/home.css'
 ---
 
-Hello, my name is Leon Zhao and I live in greater Seattle area on the west coast.
 
-
-
-### <i class="fa fa-lightbulb" aria-hidden="true"></i> Interests
+### Where is my mind?
 
 Like everyone else in the industry, I'm obsessed with ChatGPT lately. Besides I'm very interested in **Mechine Learning**, **Experiment Design**, **Causal Inference** and **Software Engineering** in general. I love
 exploring [Github](https://github.com/){:target="_blank"}, [Stackoverflow](https://stackoverflow.com/){:target="_blank"} or [Kaggle](https://kaggle.com/){:target="_blank"}
 and discovering new stuff.
 
-### <i class="fa fa-cubes" aria-hidden="true"></i> Skills
+### Skills
 *Here comes a list of subjects I've worked with, grouped by topics...*
 
 #### Scripting and Programming Languages
@@ -30,7 +27,7 @@ Rflex Based Models (Binary Classification, Regression, Structured Prediction) &b
 
 Enterprise Level Experiments (ELE) &bull; Behavioral Design &bull; Advertisement Platform &bull; Marketplace Optimization &bull; Marketplace Monetization &bull; Citrix Cloud Platform Business Manager
 
-### <i class="fa fa-briefcase" aria-hidden="true"></i> Experience
+### Experience
 
 <i class="fab fa-slack" aria-hidden="true"></i> **Slack**&nbsp;&nbsp; **Sr.Data Scientist** 2022 - Presnt
 
@@ -38,7 +35,7 @@ Enterprise Level Experiments (ELE) &bull; Behavioral Design &bull; Advertisement
 -   	Improved the data foundation for Slack Connect by redesigning and constructing pipelines that meet modeling and analytical requirements, significantly improved the data accessibility. 
 -   	Introduced Enterprise Level Experiments (ELE) concept to the team and initiated collaboration with Slack experimentation platform to realize the statistical methods and tests enable ELE within the enterprise team.
 
-<i class="fa-brands fa-tiktok"></i> **TikTok**&nbsp;&nbsp; **Sr.Data Scientist** 2021 - 2022 
+<i class="fab fa-tiktok" aria-hidden="true"></i> **TikTok**&nbsp;&nbsp; **Sr.Data Scientist** 2021 - 2022 
 
 -   	Designed, executed, and consulted split tests for new product launches and provided insights to guide the team on the next steps on both product and experimentation platform end.
 -   	Investigated TikTok Ads experimentation platform horizontally and provided best practices and guidelines for statistical methods and tests to accommodate pain points such as low sample size, pre-existing biases etc. 
