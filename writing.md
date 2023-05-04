@@ -1,6 +1,6 @@
 Copy code
 ---
-layout: default
+layout: page
 title: Writing
 ---
 
