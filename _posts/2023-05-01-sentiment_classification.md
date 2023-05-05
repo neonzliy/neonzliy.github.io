@@ -13,7 +13,7 @@ system that can perform this task automatically.
 
 Here's some preperation:
 
-~~~
+```
 import random
 from typing import Callable, Dict, List, Tuple, TypeVar, DefaultDict
 from util import *
@@ -21,7 +21,7 @@ from util import *
 FeatureVector = Dict[str, int]
 WeightVector = Dict[str, float]
 Example = Tuple[FeatureVector, int]
-~~~
+```
 
 Binary classification
 
@@ -62,7 +62,7 @@ def extractWordFeatures(x: str) -> FeatureVector:
 
 Stochastic Gradient Descent:
 
-{% highlight python linenos %}
+```
 T = TypeVar("T")
 
 
@@ -114,22 +114,91 @@ def learnPredictor(
         )
 
     return weights
-{% endhighlight %}
+```
 
-## Boxes
-You can add notification, warning and error boxes like this:
+Create an toy dataset using generateExample function and use as a test case for learnPredictor.
 
-### Notification
+```
+def generateDataset(numExamples: int, weights: WeightVector) -> List[Example]:
+    
+    def generateExample() -> Tuple[Dict[str, int], int]:
+        phi = None
+        y = None
+        while True:
+            phi = {}
+            for key in weights.keys():
+                if (
+                    random.random() < 0.5
+                ):  # Randomly select a subset of keys from weights
+                    phi[key] = random.randint(
+                        -10, 10
+                    )  # Assign random integer values to the selected keys
 
-{: .box-note}
-**Note:** This is a notification box.
+            score = dotProduct(phi, weights)
+            if score != 0:
+                break
 
-### Warning
+        y = 1 if score >= 0 else -1
 
-{: .box-warning}
-**Warning:** This is a warning box.
+        # Test that the randomly generated example coincides with the given weights
+        predicted_y = 1 if dotProduct(weights, phi) >= 0 else -1
+        assert (
+            predicted_y == y
+        ), f"Predicted label {predicted_y} does not match the generated label {y}"
 
-### Error
+        return (phi, y)
 
-{: .box-error}
-**Error:** This is an error box.
+    return [generateExample() for _ in range(numExamples)]
+```
+Some more character extraction to handel edge cases
+
+```
+def extractCharacterFeatures(n: int) -> Callable[[str], FeatureVector]:
+
+    def extract(x):
+        pass
+
+        x = x.replace(" ", "")  # Remove spaces from the input string
+        features = {}
+
+        # Iterate through the string and count the occurrences of each n-gram
+        for i in range(len(x) - n + 1):
+            ngram = x[i : i + n]
+            if ngram in features:
+                features[ngram] += 1
+            else:
+                features[ngram] = 1
+
+        return features
+
+    return extract
+```
+Finally, a test function to test different values of n for extractCharacterFeatures
+
+```
+def testValuesOfN(n: int):
+    trainExamples = readExamples("polarity.train")
+    validationExamples = readExamples("polarity.dev")
+    featureExtractor = extractCharacterFeatures(n)
+    weights = learnPredictor(
+        trainExamples, validationExamples, featureExtractor, numEpochs=20, eta=0.01
+    )
+    outputWeights(weights, "weights")
+    outputErrorAnalysis(
+        validationExamples, featureExtractor, weights, "error-analysis"
+    )  # Use this to debug
+    trainError = evaluatePredictor(
+        trainExamples,
+        lambda x: (1 if dotProduct(featureExtractor(x), weights) >= 0 else -1),
+    )
+    validationError = evaluatePredictor(
+        validationExamples,
+        lambda x: (1 if dotProduct(featureExtractor(x), weights) >= 0 else -1),
+    )
+    print(
+        (
+            "Official: train error = %s, validation error = %s"
+            % (trainError, validationError)
+        )
+    )
+```
