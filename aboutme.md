@@ -31,11 +31,7 @@ Enterprise Level Experiments (ELE) &bull; Behavioral Design &bull; Advertisement
 
 <i class="fab fa-dropbox" aria-hidden="true"></i> **Dropbox**&nbsp;&nbsp; **Sr.Data Scientist, Dash AI** 2026 - Present
 
-<i class="fab fa-slack" aria-hidden="true"></i> **Slack**&nbsp;&nbsp; 2022 - 2026
-
-**Staff Data Scientist** &nbsp; Feb 2024 - Feb 2026
-
-**Sr. Data Scientist** &nbsp; May 2022 - Feb 2024
+<i class="fab fa-slack" aria-hidden="true"></i> **Slack**&nbsp;&nbsp; **Staff Data Scientist** 2024 - 2026 · **Sr. Data Scientist** 2022 - 2024
 
 -   	Lead the design, development, and refinement of the Slack AI data organization and infrastructure. Directly managed a cross-functional team of 6 (2 Data Scientists, 2 Data Engineers, and 2 Product Analysts) driving experimentation, data quality, and model development across Slack AI initiatives.
 -   	Collaborated with Slack AI PM and Eng teams to define success metrics and build evaluation frameworks for generative AI products such as AI Recap, Search, and Channel Summaries.
