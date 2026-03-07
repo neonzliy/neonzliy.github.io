@@ -29,10 +29,18 @@ Enterprise Level Experiments (ELE) &bull; Behavioral Design &bull; Advertisement
 
 ### Experience
 
-<i class="fab fa-slack" aria-hidden="true"></i> **Slack**&nbsp;&nbsp; **Sr.Data Scientist** 2022 - Present
+<i class="fab fa-dropbox" aria-hidden="true"></i> **Dropbox**&nbsp;&nbsp; **Sr.Data Scientist, Dash AI** 2026 - Present
 
+<i class="fab fa-slack" aria-hidden="true"></i> **Slack**&nbsp;&nbsp; 2022 - 2026
+
+**Staff Data Scientist** &nbsp; Feb 2024 - Feb 2026
+
+**Sr. Data Scientist** &nbsp; May 2022 - Feb 2024
+
+-   	Lead the design, development, and refinement of the Slack AI data organization and infrastructure. Directly managed a cross-functional team of 6 (2 Data Scientists, 2 Data Engineers, and 2 Product Analysts) driving experimentation, data quality, and model development across Slack AI initiatives.
+-   	Collaborated with Slack AI PM and Eng teams to define success metrics and build evaluation frameworks for generative AI products such as AI Recap, Search, and Channel Summaries.
+-   	Improved the data foundation for Slack AI and Slack Connect by redesigning and constructing pipelines that meet modeling and analytical requirements, significantly improved the data accessibility.
 -   	Lead the DS project that involves developing a deduction-based model comprising 47 components to produce a unified Grid health score. This will aid enterprise customers in comprehending their Slack usage.
--   	Improved the data foundation for Slack Connect by redesigning and constructing pipelines that meet modeling and analytical requirements, significantly improved the data accessibility. 
 -   	Introduced Enterprise Level Experiments (ELE) concept to the team and initiated collaboration with Slack experimentation platform to realize the statistical methods and tests enable ELE within the enterprise team.
 
 <i class="fab fa-tiktok" aria-hidden="true"></i> **TikTok**&nbsp;&nbsp; **Sr.Data Scientist** 2021 - 2022 
