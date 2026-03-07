@@ -58,7 +58,7 @@ body, a {
 a.project-link:link,
 a.project-link:visited {
     text-decoration: none;
-    color: #404040;
+    color: #1E1919;
 }
 
 a.project-link:hover {
@@ -91,7 +91,7 @@ a.project-link:hover {
 /* -------- Other -------- */
 
 .stack-color {
-    color: #404040;
+    color: #1E1919;
 }
 
 .spacer {
@@ -128,4 +128,12 @@ a.project-link:hover {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+/* ----- Footer social icons ----- */
+footer .fa-stack .fa-circle {
+  color: #0061FF;
+}
+footer a:hover .fa-stack .fa-circle {
+  color: #0044CC;
 }
