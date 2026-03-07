@@ -132,7 +132,10 @@ a.project-link:hover {
 
 /* ----- Footer social icons ----- */
 footer .fa-stack .fa-circle {
-  color: #1E1919;
+  color: rgba(255,255,255,0.2);
+}
+footer .fa-stack .fa-inverse {
+  color: #FFFFFF;
 }
 footer a:hover .fa-stack .fa-circle {
   color: #0061FF;
