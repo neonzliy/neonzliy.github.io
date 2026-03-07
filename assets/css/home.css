@@ -47,10 +47,11 @@ body, a {
 @media only screen and (min-width: 768px) {
   .nav-search-link .nav-search-icon {
     display: inline;
-}
+  }
 
-.nav-search-link .nav-search-text {
+  .nav-search-link .nav-search-text {
     display: none;
+  }
 }
 
 /* ----- Card section ----- */
@@ -69,7 +70,6 @@ a.project-link:hover {
     padding: 10px;
     width: 230px;
     min-height: 300px;
-    /* Need to fix horzontal alignment for grid system */
     float: none;
     margin: 0 auto 25px auto;
 }
@@ -77,7 +77,6 @@ a.project-link:hover {
     margin: 10px;
 }
 .project-card p.text-muted {
-    /*padding: 0px;*/
     margin-top: 15px;
     margin-bottom: 10px;
     min-height: 5em;
@@ -116,7 +115,7 @@ a.project-link:hover {
     border-style: 0px;
     border-radius: 8px;
     margin-top: 5px;
-    margin-bottom: 15px;;
+    margin-bottom: 15px;
     margin-left: 0px;
     margin-right: 0px;
     padding: 10px;
@@ -130,91 +129,3 @@ a.project-link:hover {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
-.alexa-link {
-    max-height:120px;
-    overflow: hidden;
-text-overflow: ellipsis;
-display: -webkit-box;
--webkit-line-clamp: 3;
--webkit-box-orient: vertical;
-}
-.alexa-link img {
-    max-height: 100px;
-    max-width: 100px
-}
-
-.alexa-link:after {
-    /* Clear the box */
-    content: "";display: table;clear: both;
-}
-.alexa-link span.description {
-    display:none;
-}
-[tooltip]:before {
-    position : absolute;
-     content : attr(tooltip);
-     opacity : 0;
-}
-[tooltip]:hover:before {
-    opacity : 1;
-}
-[tooltip]:not([tooltip-persistent]):before {
-    pointer-events: none;
-}
-
-/*.alexa-link table {
-    max-height:100px;
-}
-*/
-/*.alexa-link table tr {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}*/
-
-.alexa-link .title {
-    float:left;
-    margin: 0;
-}
-.amazon-link .description {
-    font-size: small;
-    float:left;
-}
-.amazon-link .image {
-    margin:0; float:right;
-}
-
-
-/* Hero section */
-/*
-.hero {
-  background-color: #f8f9fa;
-  padding: 100px 0;
-  text-align: center;
-}
-
-.hero-title {
-  font-size: 48px;
-  margin-bottom: 20px;
-}
-
-.hero-subtitle {
-  font-size: 24px;
-  margin-bottom: 40px;
-}
-
-.hero-cta {
-  background-color: #007bff;
-  border-radius: 5px;
-  color: #fff;
-  display: inline-block;
-  font-size: 18px;
-  padding: 10px 20px;
-  text-decoration: none;
-  transition: background-color 0.3s;
-}
-
-.hero-cta:hover {
-  background-color: #0056b3;
-}*/

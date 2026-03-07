@@ -8,7 +8,7 @@ css: '/assets/css/home.css'
 
 ### Where is my mind?
 
-Like everyone else in the industry, I'm obsessed with ChatGPT lately. Besides I'm very interested in **Mechine Learning**, **Experiment Design**, **Causal Inference** and **Software Engineering** in general. I love
+I'm very interested in **Machine Learning**, **Experiment Design**, **Causal Inference** and **Software Engineering** in general. I love
 exploring [Github](https://github.com/){:target="_blank"}, [Stackoverflow](https://stackoverflow.com/){:target="_blank"} or [Kaggle](https://kaggle.com/){:target="_blank"}
 and discovering new stuff.
 
@@ -29,7 +29,7 @@ Enterprise Level Experiments (ELE) &bull; Behavioral Design &bull; Advertisement
 
 ### Experience
 
-<i class="fab fa-slack" aria-hidden="true"></i> **Slack**&nbsp;&nbsp; **Sr.Data Scientist** 2022 - Presnt
+<i class="fab fa-slack" aria-hidden="true"></i> **Slack**&nbsp;&nbsp; **Sr.Data Scientist** 2022 - Present
 
 -   	Lead the DS project that involves developing a deduction-based model comprising 47 components to produce a unified Grid health score. This will aid enterprise customers in comprehending their Slack usage.
 -   	Improved the data foundation for Slack Connect by redesigning and constructing pipelines that meet modeling and analytical requirements, significantly improved the data accessibility. 
