@@ -31,21 +31,8 @@ body, a {
 
 .intro-header.big-img .page-heading,
 .intro-header.big-img .post-heading {
-  color: #FFFFFF;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
-}
-
-.intro-header.no-img {
-  background-color: #0061FF;
-  padding: 1.25rem 0;
-  margin-top: 3.1875rem;
-  margin-bottom: 2.1875rem;
-}
-.intro-header.no-img h1,
-.intro-header.no-img .page-subheading,
-.intro-header.no-img hr.small {
-  color: #FFFFFF;
-  border-color: rgba(255,255,255,0.4);
+  color: #1E1919;
+  text-shadow: none;
 }
 
 /* ----- Search Bar -------*/
@@ -145,8 +132,8 @@ a.project-link:hover {
 
 /* ----- Footer social icons ----- */
 footer .fa-stack .fa-circle {
-  color: #0061FF;
+  color: #1E1919;
 }
 footer a:hover .fa-stack .fa-circle {
-  color: #0044CC;
+  color: #0061FF;
 }
