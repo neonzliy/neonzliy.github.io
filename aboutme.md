@@ -29,7 +29,7 @@ Enterprise Level Experiments (ELE) &bull; Behavioral Design &bull; Advertisement
 
 ### Experience
 
-<i class="fab fa-dropbox" aria-hidden="true"></i> **Dropbox**&nbsp;&nbsp; **Sr.Data Scientist, Dash AI** 2026 - Present
+<i class="fab fa-dropbox" aria-hidden="true"></i> **Dropbox**&nbsp;&nbsp; **Staff Data Scientist - Tech Lead, Dash AI** 2026 - Present
 
 <i class="fab fa-slack" aria-hidden="true"></i> **Slack**&nbsp;&nbsp; **Staff Data Scientist** 2024 - 2026 · **Sr. Data Scientist** 2022 - 2024
 
