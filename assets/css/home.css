@@ -31,8 +31,13 @@ body, a {
 
 .intro-header.big-img .page-heading,
 .intro-header.big-img .post-heading {
-  color: #363636;
-  text-shadow: 1px 1px 8px rgb(240,240,240);
+  color: #FFFFFF;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+.header-section.has-img .no-img h1,
+.header-section.has-img .no-img .page-subheading {
+  color: #FFFFFF;
 }
 
 /* ----- Search Bar -------*/
