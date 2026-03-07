@@ -35,9 +35,17 @@ body, a {
   text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
 }
 
-.header-section.has-img .no-img h1,
-.header-section.has-img .no-img .page-subheading {
+.intro-header.no-img {
+  background-color: #0061FF;
+  padding: 1.25rem 0;
+  margin-top: 3.1875rem;
+  margin-bottom: 2.1875rem;
+}
+.intro-header.no-img h1,
+.intro-header.no-img .page-subheading,
+.intro-header.no-img hr.small {
   color: #FFFFFF;
+  border-color: rgba(255,255,255,0.4);
 }
 
 /* ----- Search Bar -------*/
