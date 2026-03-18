@@ -15,17 +15,17 @@ and discovering new stuff.
 ### Skills
 *Here comes a list of subjects I've worked with, grouped by topics...*
 
-#### Scripting and Programming Languages
+#### Languages and Infrastructure
 
-Python (PyData,SciPy,TensorFlow) &bull; R (dplyr,ggplot2,shiny) &bull; DBs (HQL,Presto,PostgreSQL) &bull; JavaScript, PHP (for web-based visualization or apps) &bull; Hadoop,Spark,Flink &bull; Airflow,Docker,Kubernetes
+Python (PyData, SciPy, TensorFlow, PyTorch) &bull; R (dplyr, ggplot2, shiny) &bull; SQL (Presto, Spark SQL, PostgreSQL) &bull; JavaScript &bull; Spark, Flink &bull; Airflow, Docker, Kubernetes
 
-#### Data Science Stacks
+#### Data Science and ML
 
-Rflex Based Models (Binary Classification, Regression, Structured Prediction) &bull; Feature Selection and Dimensionality Reduction &bull; Time Series Analysis &bull; Inferential Statistics &bull; Multi-Armed Bandit
+Causal Inference &bull; A/B Testing and Quasi-Experimental Methods &bull; LLM Evaluation and Prompt Engineering &bull; RAG and Retrieval Optimization &bull; Classification, Regression, Structured Prediction &bull; Time Series Analysis &bull; Multi-Armed Bandits
 
-#### Domain Knowledges
+#### Domain
 
-Enterprise Level Experiments (ELE) &bull; Behavioral Design &bull; Advertisement Platform &bull; Marketplace Optimization &bull; Marketplace Monetization &bull; Citrix Cloud Platform Business Manager
+Enterprise AI Products &bull; Enterprise Level Experiments (ELE) &bull; Behavioral Design &bull; Marketplace Optimization &bull; Advertisement Platforms
 
 ### Experience
 
