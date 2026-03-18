@@ -1,19 +1,19 @@
 ---
 layout: post
 title: Some Toy Algorithms - Sentiment Classification
-subtitle: An attempt to implement common used models from scratch 
+subtitle: Implementing commonly used models from scratch
 ---
 
-This is an attempt to do a sentiment classification for the movies. We will build a binary linear
-classifier that reads movie reviews, as you would see from the sites like Rotten Tomatoes, and predicts whether the
-result is positive or negative
+This is an attempt to build a sentiment classifier for movie reviews. We'll create a binary linear
+classifier that reads reviews, like you'd see on Rotten Tomatoes, and predicts whether the
+sentiment is positive or negative.
 
-The attempt is to classified given movie reviews as ”positive” and ”negative”, Here, we will create a simple text classification
-system that can perform this task automatically.
+The goal is to classify given movie reviews as “positive” or “negative” using a simple text classification
+system built from scratch.
 
-Here's some preperation:
+### Preparation
 
-```
+```python
 import random
 from typing import Callable, Dict, List, Tuple, TypeVar, DefaultDict
 from util import *
@@ -23,9 +23,9 @@ WeightVector = Dict[str, float]
 Example = Tuple[FeatureVector, int]
 ```
 
-Binary classification
+### Binary Classification
 
-```
+```python
 def extractWordFeatures(x: str) -> FeatureVector:
     """
     Extract word features for a string x. Words are delimited by
@@ -34,8 +34,6 @@ def extractWordFeatures(x: str) -> FeatureVector:
     @return dict: feature vector representation of x.
     Example: "I am what I am" --> {'I': 2, 'am': 2, 'what': 1}
     """
-    pass
-
     import string
 
     # Convert the review to lowercase
@@ -60,9 +58,9 @@ def extractWordFeatures(x: str) -> FeatureVector:
     return word_features
 ```
 
-Stochastic Gradient Descent:
+### Stochastic Gradient Descent
 
-```
+```python
 T = TypeVar("T")
 
 
@@ -116,9 +114,11 @@ def learnPredictor(
     return weights
 ```
 
-Create an toy dataset using generateExample function and use as a test case for learnPredictor.
+### Toy Dataset
 
-```
+Create a toy dataset using the `generateExample` function as a test case for `learnPredictor`.
+
+```python
 def generateDataset(numExamples: int, weights: WeightVector) -> List[Example]:
     
     def generateExample() -> Tuple[Dict[str, int], int]:
@@ -150,14 +150,14 @@ def generateDataset(numExamples: int, weights: WeightVector) -> List[Example]:
 
     return [generateExample() for _ in range(numExamples)]
 ```
-Some more character extraction to handel edge cases
+### Character N-gram Features
 
-```
+Some additional feature extraction to handle edge cases.
+
+```python
 def extractCharacterFeatures(n: int) -> Callable[[str], FeatureVector]:
 
     def extract(x):
-        pass
-
         x = x.replace(" ", "")  # Remove spaces from the input string
         features = {}
 
@@ -173,9 +173,11 @@ def extractCharacterFeatures(n: int) -> Callable[[str], FeatureVector]:
 
     return extract
 ```
-Finally, a test function to test different values of n for extractCharacterFeatures
+### Testing Different Values of N
 
-```
+Finally, a test function to evaluate different values of `n` for `extractCharacterFeatures`.
+
+```python
 def testValuesOfN(n: int):
     trainExamples = readExamples("polarity.train")
     validationExamples = readExamples("polarity.dev")
