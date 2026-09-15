@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: portfolio
 title: "Leon Zhao"
 subtitle: "Explorer, ML Advocate, Behavior Designer"
 ---

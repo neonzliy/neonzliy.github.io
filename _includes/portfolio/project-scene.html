@@ -1,0 +1,9 @@
+<section class="chapter chapter-writing" id="writing-{{ include.index }}" aria-labelledby="writing-heading-{{ include.index }}">
+  <article class="chapter-copy">
+    <p class="eyebrow"><span>0{{ include.index | plus: 1 }}</span> {{ include.phase }}</p>
+    <p class="article-date">Writing <span aria-hidden="true">/</span> <time datetime="{{ include.post.date | date_to_xmlschema }}">{{ include.post.date | date: '%B %-d, %Y' }}</time></p>
+    <h2 id="writing-heading-{{ include.index }}"><a data-project-link href="{{ include.post.url | relative_url }}">{{ include.post.title }}</a></h2>
+    <p class="article-description">{{ include.post.subtitle | default: include.post.excerpt | strip_html }}</p>
+    <a class="text-link" data-project-link href="{{ include.post.url | relative_url }}">Read the article <span aria-hidden="true">↗</span><span class="sr-only">: {{ include.post.title }}</span></a>
+  </article>
+</section>

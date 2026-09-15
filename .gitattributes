@@ -46,3 +46,5 @@ Dockerfile text eol=lf
 *.mp3 binary
 *.ogg binary
 *.flv binary
+
+assets/vendor/three/three.module.min.js -whitespace linguist-vendored

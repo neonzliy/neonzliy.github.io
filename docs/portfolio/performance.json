@@ -1,0 +1,32 @@
+{
+  "environment": "Headless Chrome on the development Mac; mobile is viewport emulation, not a physical device.",
+  "threeBytes": 742309,
+  "threeGzipBytes": 190855,
+  "posterBytes": 18346,
+  "measurements": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "samples": 180,
+      "averageFrameMs": 16.67,
+      "p95FrameMs": 16.8,
+      "meanFrameRate": 60,
+      "proceduralMeshes": 250,
+      "trianglesExcludingCables": 106896
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "samples": 180,
+      "averageFrameMs": 16.67,
+      "p95FrameMs": 16.7,
+      "meanFrameRate": 60,
+      "proceduralMeshes": 204,
+      "trianglesExcludingCables": 57864
+    }
+  ]
+}

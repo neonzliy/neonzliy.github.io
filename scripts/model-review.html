@@ -1,0 +1,14 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Seagull anatomy review</title><style>body{margin:0;background:#090b0d}canvas{display:block}p{position:fixed;bottom:24px;left:32px;color:#aaa;font:12px monospace}</style></head><body><p>SEAGULL / ASSEMBLED ANATOMY STUDY</p><script type="module">
+import * as T from '/assets/vendor/three/three.module.min.js';
+import {createSeagull} from '/assets/js/portfolio/SeagullAssembly.js';
+import {createLighting} from '/assets/js/portfolio/Lighting.js';
+const renderer=new T.WebGLRenderer({antialias:true,preserveDrawingBuffer:true});renderer.setSize(innerWidth,innerHeight);renderer.setPixelRatio(1);renderer.toneMapping=T.ACESFilmicToneMapping;renderer.toneMappingExposure=.86;document.body.append(renderer.domElement);
+const scene=new T.Scene();scene.background=new T.Color(0x090b0d);createLighting(scene,renderer);
+const bird=createSeagull();scene.add(bird.root);
+const camera=new T.PerspectiveCamera(33,innerWidth/innerHeight,.1,100);
+const positions={front:[0,2.2,7.5],side:[7.5,2.4,0],three:[4.2,3.1,6.3]};
+camera.position.set(...(positions[new URLSearchParams(location.search).get('view')]||positions.three));camera.lookAt(0,1.65,0);renderer.render(scene,camera);
+window.review={renderer,scene,camera,bird};
+if(new URLSearchParams(location.search).has('poster'))document.querySelector('p').hidden=true;
+addEventListener('resize',()=>{renderer.setSize(innerWidth,innerHeight);camera.aspect=innerWidth/innerHeight;camera.updateProjectionMatrix();renderer.render(scene,camera);});
+</script></body></html>

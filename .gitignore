@@ -8,8 +8,11 @@ _site
 Thumbs.db
 ehthumbs.db
 
-Gemfile.lock
-
 beautiful-jekyll-theme-*.gem
 
 .databricks
+node_modules/
+test-results/
+playwright-report/
+.bundle/
+.jekyll-cache/

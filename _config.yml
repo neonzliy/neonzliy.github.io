@@ -289,6 +289,14 @@ exclude:
   - screenshot.png
   - docs/
   - vendor/
+  - node_modules/
+  - scripts/
+  - tests/
+  - test-results/
+  - playwright-report/
+  - package.json
+  - package-lock.json
+  - playwright.config.js
 
 plugins:
   - jekyll-paginate
@@ -296,4 +304,3 @@ plugins:
 
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
-
