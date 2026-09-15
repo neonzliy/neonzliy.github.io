@@ -49,8 +49,8 @@ export function startExperience(stage){
     const idle=1-range(progress,.8,.94);
     pointer.lerp(targetPointer,1-Math.exp(-3.5*dt));hover+=(targetHover-hover)*(1-Math.exp(-5*dt));
     timeline.apply(progress,quality.mobile);rig.update(progress,dt,quality.mobile);
-    bird.root.rotation.set(0,Math.sin(elapsed*.16)*.012*idle+pointer.x*.075*idle,0);
-    bird.root.position.y=0;
+    bird.root.rotation.set(.02+pointer.y*.035*idle,Math.sin(elapsed*.16)*.018*idle+pointer.x*.055*idle,-.075+Math.sin(elapsed*.23)*.012*idle);
+    bird.root.position.y=Math.sin(elapsed*.62)*.025*idle;
     bird.glow.emissiveIntensity=1.8+hover*.9;bird.coreLight.intensity=.5+hover*.4;
     cables.update();
     stage.style.setProperty('--mark-opacity',range(progress,.80,.89));

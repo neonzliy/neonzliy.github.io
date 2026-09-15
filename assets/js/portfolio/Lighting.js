@@ -14,13 +14,5 @@ export function createLighting(scene, renderer) {
   }
   const pmrem=new T.PMREMGenerator(renderer); const env=pmrem.fromScene(studio,.04); scene.environment=env.texture;
   studio.traverse(o=>{o.geometry?.dispose();o.material?.dispose();}); pmrem.dispose();
-  // A low machined plinth anchors the planted feet without realtime shadows.
-  const plinth=new T.Group();scene.add(plinth);
-  const baseMaterial=new T.MeshStandardMaterial({color:0x171e23,metalness:.82,roughness:.36});
-  const rimMaterial=new T.MeshStandardMaterial({color:0x666c6d,metalness:.9,roughness:.3});
-  const base=new T.Mesh(new T.CylinderGeometry(.71,.75,.035,80),baseMaterial);base.position.set(0,.003,.04);plinth.add(base);
-  for(const radius of [.69,.73]){
-    const line=new T.Mesh(new T.TorusGeometry(radius,.003,6,96),rimMaterial);line.rotation.x=Math.PI/2;line.position.set(0,.022,.04);plinth.add(line);
-  }
-  return ()=>{env.dispose();scene.environment=null;plinth.traverse(o=>o.geometry?.dispose());baseMaterial.dispose();rimMaterial.dispose();scene.remove(plinth);};
+  return ()=>{env.dispose(); scene.environment=null;};
 }
