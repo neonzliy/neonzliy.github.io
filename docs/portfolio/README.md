@@ -1,6 +1,6 @@
 # Robotic seagull portfolio
 
-The homepage presents Leon Zhao's existing bio and three articles alongside a standing, scroll-driven mechanical seagull. The bird separates into perception, structure, movement and connection assemblies, then returns around a typographic LZ mark. The implementation extends the existing Jekyll site with browser-native ES modules and Three.js 0.186.0.
+The homepage presents Leon Zhao's existing bio and three articles alongside a scroll-driven mechanical seagull. The bird separates into perception, structure, movement and connection assemblies, then returns around a typographic LZ mark. The implementation extends the existing Jekyll site with browser-native ES modules and Three.js 0.186.0.
 
 ## Content and deployment
 
@@ -29,7 +29,7 @@ The existing Pages deployment workflow remains unchanged and deploys only from `
 | Renderer lifecycle, pointer damping, focus response, pause, cleanup | `assets/js/portfolio/Experience.js` |
 | Deferred loading, quality choices and static state | `boot.js`, `QualityController.js`, `StaticFallback.js` in the same directory |
 
-The standing model uses a fuller curved chest, a short ceramic neck, smoked canopy, overlapping folded feather plates, articulated legs and webbed feet. A slim machined plinth anchors the sculpture. Thickened lofted armor separates to reveal metal rails, pistons, ribs and a warm core. The wings open outward during disassembly and fold back into the planted pose. It has explicit parent relationships and local pivots. The same interpolation paths run forward and backward; no cumulative rotations or physics impulses are used. Cables rebuild only when their endpoints change. Idle motion fades out before contact, and all parts reach their exact assembled transforms by 94% progress.
+The model uses smooth lofted surfaces, cambered feather blades, metal rails, pistons and ribs. It has explicit parent relationships and local pivots. The same interpolation paths run forward and backward; no cumulative rotations or physics impulses are used. Cables rebuild only when their endpoints change. Idle motion fades out before contact, and all parts reach their exact assembled transforms by 94% progress.
 
 No React migration, smooth-scroll hijack, scroll snapping, animation gate, image sequence or external model service is required. The finished bird is a reusable procedural assembly rather than a GLB.
 
@@ -89,12 +89,12 @@ node scripts/capture-model.mjs
 
 `scripts/measure.mjs` scrolls through the page across 180 animation frames. This is a development-Mac headless Chrome sample, not a real-device mobile benchmark.
 
-| Viewport | Mean frame interval | Mean frame rate | Bird geometry excluding cables and plinth |
+| Viewport | Mean frame interval | Mean frame rate | Geometry excluding cables |
 | --- | --- | --- | --- |
-| 1440×900 | 16.67 ms | 60 fps | 106,896 triangles / 250 meshes |
-| 390×844 emulation | 16.67 ms | 60 fps | 57,864 triangles / 204 meshes |
+| 1440×900 | 16.67 ms | 60 fps | 69,440 triangles / 209 meshes |
+| 390×844 emulation | 16.67 ms | 60 fps | 45,536 triangles / 149 meshes |
 
-The vendored Three.js module is 742,309 bytes, or 190,855 bytes when gzipped; the WebP poster is 18,346 bytes. Actual transfer compression depends on the host. No realtime shadows, transmission, bloom passes or external textures are used.
+The vendored Three.js module is 742,309 bytes, or 190,855 bytes when gzipped; the WebP poster is 18,386 bytes. Actual transfer compression depends on the host. No realtime shadows, transmission, bloom passes or external textures are used.
 
 ## Limits
 

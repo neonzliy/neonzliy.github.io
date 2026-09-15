@@ -2,13 +2,12 @@ import * as T from '../../vendor/three/three.module.min.js';
 
 // A smooth, elliptical loft: sections = [z, half width, half height, center y].
 // Partial angular ranges make separate fitted armor panels from the same surface.
-export function loft(sections, { start = 0, end = Math.PI * 2, rings = 32, sides = 32, tStart = 0, tEnd = 1 } = {}) {
+export function loft(sections, { start = 0, end = Math.PI * 2, rings = 32, sides = 32 } = {}) {
   const profile = new T.CatmullRomCurve3(sections.map(s => new T.Vector3(s[0], s[1], s[2])));
   const centers = new T.CatmullRomCurve3(sections.map(s => new T.Vector3(s[0], s[3] || 0, 0)));
   const positions = [], indices = [];
   for (let i = 0; i <= rings; i++) {
-    const t = tStart + (tEnd - tStart) * i / rings;
-    const p = profile.getPoint(t), c = centers.getPoint(t);
+    const p = profile.getPoint(i / rings), c = centers.getPoint(i / rings);
     for (let j = 0; j <= sides; j++) {
       const a = start + (end - start) * j / sides;
       positions.push(Math.max(.001, p.y) * Math.cos(a), c.y + Math.max(.001, p.z) * Math.sin(a), p.x);
@@ -56,22 +55,4 @@ export function rod(a, b, radius, material) {
 
 export function curveTube(points, radius, material, segments = 20) {
   return new T.Mesh(new T.TubeGeometry(new T.CatmullRomCurve3(points.map(p => new T.Vector3(...p))), segments, radius, 6, false), material);
-}
-
-export function verticalLoft(sections, options={}) {
-  return loft(sections.map(([y,rx,rz,cz=0])=>[y,rx,rz,-cz]),options).rotateX(-Math.PI/2);
-}
-
-export function thicken(geometry,depth=.018) {
-  const src=geometry.attributes.position,norm=geometry.attributes.normal,n=src.count;
-  const p=[],indices=[...geometry.index.array],edges=new Map();
-  for(let i=0;i<n;i++)p.push(src.getX(i),src.getY(i),src.getZ(i));
-  for(let i=0;i<n;i++)p.push(src.getX(i)-norm.getX(i)*depth,src.getY(i)-norm.getY(i)*depth,src.getZ(i)-norm.getZ(i)*depth);
-  const original=[...indices];
-  for(let i=0;i<original.length;i+=3){
-    const [a,b,c]=original.slice(i,i+3);indices.push(c+n,b+n,a+n);
-    for(const [u,v] of [[a,b],[b,c],[c,a]]){const key=u<v?`${u}:${v}`:`${v}:${u}`;if(edges.has(key))edges.delete(key);else edges.set(key,[u,v]);}
-  }
-  for(const [u,v] of edges.values())indices.push(u,v+n,v,u,u+n,v+n);
-  geometry.dispose();return surface(p,indices);
 }

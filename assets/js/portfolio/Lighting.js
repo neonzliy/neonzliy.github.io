@@ -1,8 +1,8 @@
 import * as T from '../../vendor/three/three.module.min.js';
 export function createLighting(scene, renderer) {
   scene.add(new T.HemisphereLight(0xe8edf0,0x35302a,.8));
-  const key = new T.DirectionalLight(0xfff0e1,2.3); key.position.set(2,6,5); scene.add(key);
-  const rim = new T.DirectionalLight(0xc4d6ef,3.1); rim.position.set(-5,3,-4); scene.add(rim);
+  const key = new T.DirectionalLight(0xfff0d9,2.8); key.position.set(2,6,5); scene.add(key);
+  const rim = new T.DirectionalLight(0xdbe4ef,2.6); rim.position.set(-5,3,-4); scene.add(rim);
   const fill = new T.DirectionalLight(0xf6e3c7,.5); fill.position.set(3,-2,2); scene.add(fill);
   // A tiny procedural studio environment gives metal a broad, controlled reflection.
   const studio=new T.Scene(); studio.background=new T.Color(0x32383d);
