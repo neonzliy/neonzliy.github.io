@@ -2,7 +2,8 @@
 layout: post
 title: The Missing Layer in AI Adoption Is Workflow Design
 subtitle: Why useful AI spreads through pain discovery, ownership, contribution paths, and habit formation
-date: 2026-09-17 11:00:00 -0700
+date: 2026-05-29 09:00:00 -0700
+permalink: /2026-09-17-the-missing-layer-in-ai-adoption-is-workflow-design/
 ---
 
 I have seen a recurring pattern in how organizations approach AI.

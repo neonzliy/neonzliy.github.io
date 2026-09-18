@@ -2,7 +2,8 @@
 layout: post
 title: Evaluating AI Products Beyond Accuracy
 subtitle: A practical measurement stack for quality, cost, latency, and product value
-date: 2026-09-17 12:00:00 -0700
+date: 2026-07-14 09:00:00 -0700
+permalink: /2026-09-17-evaluating-ai-products-beyond-accuracy/
 ---
 
 AI products are often evaluated as if the central question were simple:

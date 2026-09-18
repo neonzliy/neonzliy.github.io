@@ -2,7 +2,8 @@
 layout: post
 title: Trustworthy Decision Systems Begin With Model Skepticism
 subtitle: How to validate signals, separate mechanisms from artifacts, and make uncertainty useful
-date: 2026-09-17 10:00:00 -0700
+date: 2026-03-18 09:00:00 -0700
+permalink: /2026-09-17-trustworthy-decision-systems-begin-with-model-skepticism/
 ---
 
 I have learned to distrust models that look impressive too quickly.
