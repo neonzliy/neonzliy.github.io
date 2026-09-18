@@ -2,7 +2,8 @@
 layout: post
 title: Claude Code Is a Workflow, Not a Chat Box
 subtitle: What sustained agentic work taught me about exit criteria, evaluation, context, and review
-date: 2026-09-17 13:00:00 -0700
+date: 2026-09-09 09:00:00 -0700
+permalink: /2026-09-17-claude-code-is-a-workflow-not-a-chat-box/
 ---
 
 The least useful way to evaluate a coding agent is to ask whether it produced an answer.
