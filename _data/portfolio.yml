@@ -1,0 +1,73 @@
+hero:
+  eyebrow: "Explorer, AI-Native Advocate, Behavior Designer"
+  title: "Leon Zhao"
+  introduction: "A builder who develops and evaluates AI products, connecting quality, cost, and user value through data science and behavior design."
+  cue: "Scroll to inspect the atlas"
+
+about:
+  label: "01 · Bio"
+  title: "Leon is a builder."
+  body: "He builds and evaluates AI products, and designs the systems that help organizations adopt them well. His work draws on behavior design, data science leadership, causal inference, and machine learning."
+  detail: "His work spans AI product evaluation, quality and cost measurement, reusable workflows, enterprise systems, advertising platforms, and products for gig earners."
+  link:
+    label: "View experience"
+    href: "/me/"
+
+work_intro:
+  label: "02 · Experience"
+  title: "Products shaped by evidence."
+  body: "Across Dropbox, Slack, TikTok, and Uber, Leon has paired product development with quantitative practice."
+
+projects:
+  - number: "01"
+    title: "AI and enterprise systems"
+    description: "At Dropbox, Leon is on the Dash AI team. At Slack, he developed quantitative solutions for unstructured business problems in the Enterprise domain."
+    role: "Dropbox · Slack"
+    year: "AI · Enterprise"
+    href: "/me/"
+    link_label: "View experience"
+  - number: "02"
+    title: "Advertising product prototypes"
+    description: "At TikTok, Leon led data science for advertising product prototypes and automated ad solutions. He also introduced best practices and guidelines within the Ads experimentation platform."
+    role: "TikTok"
+    year: "Ads · Experimentation"
+    href: "/me/"
+    link_label: "View experience"
+  - number: "03"
+    title: "Experimenting for earners"
+    description: "At Uber, Leon tackled difficult earner problems through extensive experimentation and helped pioneer the Uber One Earner launch, the first multi-platform earning mechanism of its kind for gig earners."
+    role: "Uber"
+    year: "Earners · Experiments"
+    href: "/me/"
+    link_label: "View experience"
+
+writing:
+  label: "03 · Field notes"
+  title: "Writing through the work."
+  body: "Methods become more useful when their assumptions, tradeoffs, and failure modes are made visible."
+  posts:
+    - title: "Reducing Hallucinations by 60% Without Changing the Model"
+      topic: "Enterprise AI · 2025"
+      href: "/2025-03-01-reducing-hallucinations-enterprise-llms/"
+    - title: "Measuring AI Impact When You Can't A/B Test"
+      topic: "Causal inference · 2025"
+      href: "/2025-01-15-measuring-ai-impact-without-ab-tests/"
+    - title: "Some Toy Algorithms: Sentiment Classification"
+      topic: "Machine learning · 2023"
+      href: "/2023-05-01-sentiment_classification/"
+  archive:
+    label: "All writing"
+    href: "/writings/"
+
+contact:
+  label: "04 · Contact"
+  title: "Start with a question."
+  body: "Reach out to talk about AI-native workflows, product measurement, behavior design, data science leadership, or causal inference."
+  email: "leonzhao705@gmail.com"
+  links:
+    - label: "GitHub"
+      href: "https://github.com/neonzliy"
+    - label: "LinkedIn"
+      href: "https://www.linkedin.com/in/liyangzhao705"
+    - label: "Instagram"
+      href: "https://www.instagram.com/steelephant"

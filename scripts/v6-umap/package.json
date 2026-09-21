@@ -1,0 +1,12 @@
+{
+  "name": "leonz-v6-umap-generator",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "generate": "node generate.mjs ../../assets/data/seagull-umap.json"
+  },
+  "dependencies": {
+    "umap-js": "1.4.0"
+  }
+}
