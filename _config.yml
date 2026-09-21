@@ -13,10 +13,10 @@
 title: leonz.site
 
 # Short description of your site
-description: "A personal blog all about neonz."
+description: "Leon Zhao builds and evaluates AI products, connecting quality, cost, and user value with AI-native workflows, data science, and behavior design."
 
 # Your name to show in the footer
-author: neonz
+author: Leon Zhao
 
 ###############################################
 # --- List of links in the navigation bar --- #
@@ -24,8 +24,8 @@ author: neonz
 
 navbar-links:
   Home: "/"
-  Writing: "writings"
-  Me: "me"
+  Writing: "writings/"
+  Me: "me/"
 
 ################
 # --- Logo --- #
@@ -121,7 +121,7 @@ edit_page_button: false
 navbar-var-length: false
 
 # The keywords to associate with your website, for SEO purposes
-keywords: "data science,machine learning,causal inference,experimentation,LLM,AI,Leon Zhao"
+keywords: "AI product evaluation,AI quality,AI cost,AI-native workflows,data science,causal inference,experimentation,behavior design,Leon Zhao"
 
 ######################################
 # --- Colours / background image --- #
@@ -149,7 +149,7 @@ footer-hover-col: "#0061FF"
 #page-img: "/assets/img/bgimage.png"
 
 # Suggest a colour for mobile browsers to use as the browser's theme. This is only supported by a few mobile browsers.
-#mobile-theme-col: "#0085A1"
+mobile-theme-col: "#05070A"
 
 # For any extra visual customization, you can include additional CSS files in every page on your site. List any custom CSS files here
 #site-css:
@@ -257,7 +257,6 @@ timezone: "America/Los_Angeles"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
-paginate: 5
 
 kramdown:
   input: GFM
@@ -291,9 +290,7 @@ exclude:
   - vendor/
 
 plugins:
-  - jekyll-paginate
   - jekyll-sitemap
 
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
-

@@ -1,0 +1,54 @@
+---
+---
+<!doctype html>
+<html lang="{{ page.language | default: site.language | default: 'en' }}" class="editorial-root">
+  {% include head.html %}
+  <link rel="stylesheet" href="{{ '/assets/css/editorial.css' | relative_url }}">
+  <body class="{% if page.id %}editorial-post{% else %}editorial-page{% endif %}">
+    {% include gtm_body.html %}
+
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    {% include studio-header.html %}
+
+    <div class="editorial-atmosphere" aria-hidden="true">
+      <span></span><span></span><span></span>
+    </div>
+
+    <main id="main-content" class="editorial-main">
+      <header class="editorial-hero">
+        <p class="editorial-kicker">
+          {% if page.id %}Field note · {{ page.date | date: "%Y" }}{% elsif page.url == '/writings/' %}Selected thinking{% else %}Practice and experience{% endif %}
+        </p>
+        <h1>{{ page.title }}</h1>
+        {% if page.subtitle %}<p class="editorial-subtitle">{{ page.subtitle }}</p>{% endif %}
+      </header>
+
+      <article class="editorial-body{% if page.id %} editorial-body--post{% endif %}">
+        {{ content }}
+      </article>
+
+      {% if page.id %}
+      <nav class="article-pagination" aria-label="More writing">
+        {% if page.previous.url %}
+        <a href="{{ page.previous.url | relative_url }}">
+          <span>Previous</span>
+          <strong>{{ page.previous.title }}</strong>
+        </a>
+        {% else %}<span></span>{% endif %}
+        {% if page.next.url %}
+        <a class="article-pagination__next" href="{{ page.next.url | relative_url }}">
+          <span>Next</span>
+          <strong>{{ page.next.title }}</strong>
+        </a>
+        {% endif %}
+      </nav>
+      {% endif %}
+
+      <footer class="editorial-footer">
+        <a class="wordmark" href="{{ '/' | relative_url }}" aria-label="Leon Zhao, home">LZ<span aria-hidden="true">.</span></a>
+        <p>Data science, AI evaluation, and experimentation.</p>
+        <p>© {{ 'now' | date: '%Y' }} Leon Zhao</p>
+      </footer>
+    </main>
+  </body>
+</html>

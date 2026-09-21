@@ -1,8 +1,7 @@
 ---
-layout: page
+layout: editorial
 title: Writings
 permalink: /writings/
-css: '/assets/css/home.css'
 ---
 
 {% for post in site.posts %}
