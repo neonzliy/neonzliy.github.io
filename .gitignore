@@ -15,3 +15,4 @@ Gemfile.lock
 beautiful-jekyll-theme-*.gem
 
 .databricks
+databricks.yml
