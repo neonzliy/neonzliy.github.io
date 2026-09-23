@@ -291,6 +291,7 @@ exclude:
   - scripts/
   - typings/
   - vendor/
+  - assets/vendor/three/README.md
 
 plugins:
   - jekyll-sitemap
