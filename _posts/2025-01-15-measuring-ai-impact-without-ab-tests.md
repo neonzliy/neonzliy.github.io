@@ -1,5 +1,6 @@
 ---
 layout: post
+description: "How Leon Zhao measured AI feature impact using exact matching and difference-in-differences when randomized A/B tests were unavailable."
 title: Measuring AI Impact When You Can't A/B Test
 subtitle: Using quasi-experimental methods to evaluate feature value at scale
 ---

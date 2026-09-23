@@ -1,0 +1,52 @@
+{% assign person_id = '/me/#person' | absolute_url %}
+{% assign website_id = '/#website' | absolute_url %}
+{% assign webpage_id = canonical_url | append: '#webpage' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": {{ person_id | jsonify }},
+      "name": {{ site.author | jsonify }},
+      "url": {{ '/me/' | absolute_url | jsonify }},
+      "image": {{ site.avatar | absolute_url | jsonify }},
+      "sameAs": [
+        {{ 'https://github.com/' | append: site.social-network-links.github | jsonify }},
+        {{ 'https://www.linkedin.com/in/' | append: site.social-network-links.linkedin | jsonify }}
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": {{ website_id | jsonify }},
+      "url": {{ '/' | absolute_url | jsonify }},
+      "name": {{ site.title | jsonify }},
+      "inLanguage": "en",
+      "publisher": { "@id": {{ person_id | jsonify }} }
+    },
+    {
+      "@type": {% if page.url == '/me/' %}"ProfilePage"{% elsif page.url == '/writings/' %}"CollectionPage"{% else %}"WebPage"{% endif %},
+      "@id": {{ webpage_id | jsonify }},
+      "url": {{ canonical_url | jsonify }},
+      "name": {{ seo_title | jsonify | replace: '<', '\u003c' }},
+      "description": {{ seo_description | jsonify | replace: '<', '\u003c' }},
+      "inLanguage": "en",
+      "isPartOf": { "@id": {{ website_id | jsonify }} }{% if page.url == '/me/' or page.url == '/' %},
+      "mainEntity": { "@id": {{ person_id | jsonify }} }{% endif %}
+    }{% if page.id %},
+    {
+      "@type": "BlogPosting",
+      "@id": {{ canonical_url | append: '#article' | jsonify }},
+      "url": {{ canonical_url | jsonify }},
+      "headline": {{ page.title | jsonify | replace: '<', '\u003c' }},
+      "description": {{ seo_description | jsonify | replace: '<', '\u003c' }},
+      "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
+      {% if page.last_modified_at %}"dateModified": {{ page.last_modified_at | date_to_xmlschema | jsonify }},{% endif %}
+      "inLanguage": "en",
+      "author": { "@id": {{ person_id | jsonify }} },
+      "publisher": { "@id": {{ person_id | jsonify }} },
+      "mainEntityOfPage": { "@id": {{ webpage_id | jsonify }} }
+    }{% endif %}
+  ]
+}
+</script>

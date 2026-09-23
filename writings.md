@@ -1,8 +1,11 @@
 ---
 layout: editorial
-title: Writings
+title: "Writing on AI Evaluation, Workflows & Data Science"
+description: "Practical articles by Leon Zhao on AI product evaluation, LLM quality, AI-native workflow design, experimentation, and causal inference."
 permalink: /writings/
 ---
+
+Practical notes from building and evaluating AI products. Explore quality, cost, latency, workflow adoption, and the evidence behind product decisions.
 
 {% for post in site.posts %}
   <div class="post-preview">

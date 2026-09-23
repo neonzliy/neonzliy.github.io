@@ -1,5 +1,6 @@
 ---
 layout: post
+description: "Design coding-agent workflows around exit criteria, evaluation, context, and human review to turn plausible answers into completed work."
 title: Claude Code Is a Workflow, Not a Chat Box
 subtitle: What sustained agentic work taught me about exit criteria, evaluation, context, and review
 date: 2026-09-09 09:00:00 -0700

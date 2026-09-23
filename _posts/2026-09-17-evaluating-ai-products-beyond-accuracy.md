@@ -1,5 +1,6 @@
 ---
 layout: post
+description: "Evaluate AI products across quality, latency, cost, and user value with a measurement framework that connects model scores to product outcomes."
 title: Evaluating AI Products Beyond Accuracy
 subtitle: A practical measurement stack for quality, cost, latency, and product value
 date: 2026-07-14 09:00:00 -0700

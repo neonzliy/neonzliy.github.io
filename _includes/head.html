@@ -2,26 +2,19 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  {% capture title %}
-    {%- if page.share-title -%}
-      {{ page.share-title | strip_html | xml_escape }}
-    {%- elsif page.title -%}
-      {{ page.title | strip_html | xml_escape  }}
-    {%- else -%}
-      {{ site.title | strip_html | xml_escape }}
-    {%- endif -%}
-  {% endcapture %}
-
-  {% capture description %}
-    {%- if page.share-description -%}
-      {{ page.share-description | strip_html | xml_escape }}
-    {%- elsif page.subtitle -%}
-      {{ page.subtitle | strip_html | xml_escape }}
-    {%- else -%}
-      {%- assign excerpt_length = site.excerpt_length | default: 50 -%}
-      {{ page.content | strip_html | xml_escape | truncatewords: excerpt_length | strip }}
-    {%- endif -%}
-  {% endcapture %}
+  {% assign seo_title = page.share-title | default: page.title | default: site.title | strip_html | normalize_whitespace %}
+  {% assign seo_description = page.description | default: page.share-description | default: page.subtitle %}
+  {% unless seo_description %}
+    {% if page.id %}
+      {% assign seo_description = page.excerpt | markdownify | strip_html | normalize_whitespace | truncate: 160 %}
+    {% else %}
+      {% assign seo_description = site.description %}
+    {% endif %}
+  {% endunless %}
+  {% assign seo_description = seo_description | strip_html | normalize_whitespace %}
+  {% assign title = seo_title | xml_escape %}
+  {% assign description = seo_description | xml_escape %}
+  {% assign canonical_url = page.url | absolute_url | replace: '/index.html', '/' %}
 
   <title>{{ title }}</title>
 
@@ -30,13 +23,14 @@
   {% endif %}
 
   <meta name="description" content="{{ description }}">
+  {% if page.noindex %}
+  <meta name="robots" content="noindex, follow">
+  {% else %}
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  {% endif %}
 
   {% if site.mobile-theme-col %}
   <meta name="theme-color" content="{{ site.mobile-theme-col }}">
-  {% endif %}
-
-  {% if site.keywords %}
-  <meta name="keywords" content="{{ site.keywords }}">
   {% endif %}
 
   {% if site.rss-description %}
@@ -110,17 +104,20 @@
   <meta property="og:image" content="{{ img | absolute_url }}">
   {% endif %}
 
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="{{ canonical_url }}">
+  <link rel="canonical" href="{{ canonical_url }}">
   {% if page.id %}
   <meta property="og:type" content="article">
-  <meta property="og:article:author" content="{{ site.author }}">
-  <meta property="og:article:published_time" content="{{ page.date | date_to_xmlschema }}">
-  <meta property="og:url" content="{{ page.url | absolute_url }}">
-  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <meta property="article:author" content="{{ '/me/' | absolute_url }}">
+  <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+  {% if page.last_modified_at %}
+  <meta property="article:modified_time" content="{{ page.last_modified_at | date_to_xmlschema }}">
+  {% endif %}
   {% else %}
   <meta property="og:type" content="website">
-  <meta property="og:url" content="{{ page.url | absolute_url | strip_index }}">
-  <link rel="canonical" href="{{ page.url | absolute_url | strip_index }}">
   {% endif %}
+  {% unless page.noindex %}{% include structured-data.html %}{% endunless %}
 
   {% if img != "" and img != site.avatar %}
   <meta name="twitter:card" content="summary_large_image">

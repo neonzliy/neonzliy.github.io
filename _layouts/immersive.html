@@ -91,11 +91,11 @@
             <p class="scene__detail">{{ site.data.portfolio.writing.body }}</p>
           </div>
           <div class="writing-list">
-            {% for post in site.data.portfolio.writing.posts %}
-            <a class="writing-row project-reactive" href="{{ post.href | relative_url }}">
+            {% for post in site.posts limit:3 %}
+            <a class="writing-row project-reactive" href="{{ post.url | relative_url }}">
               <span class="writing-row__index">0{{ forloop.index }}</span>
               <span class="writing-row__title">{{ post.title }}</span>
-              <span class="writing-row__topic">{{ post.topic }}</span>
+              <span class="writing-row__topic">{{ post.date | date: "%b %Y" }}</span>
               <span class="writing-row__arrow" aria-hidden="true">↗</span>
             </a>
             {% endfor %}

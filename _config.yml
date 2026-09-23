@@ -10,7 +10,8 @@
 ############################
 
 # Name of website
-title: leonz.site
+title: "Leon Zhao | AI Product Evaluation & Data Science"
+language: en
 
 # Short description of your site
 description: "Leon Zhao builds and evaluates AI products, connecting quality, cost, and user value with AI-native workflows, data science, and behavior design."
@@ -80,7 +81,7 @@ social-network-links:
 
 # If you want your website to generate an RSS feed, provide a description
 # The URL for the feed will be https://<your_website>/feed.xml
-# rss-description: This website is a virtual proof that I'm awesome
+rss-description: "Leon Zhao on AI product evaluation, AI-native workflows, causal inference, and data science."
 
 baseurl: ""
 url: "https://leonz.site"
@@ -287,6 +288,8 @@ exclude:
   - README.md
   - screenshot.png
   - docs/
+  - scripts/
+  - typings/
   - vendor/
 
 plugins:

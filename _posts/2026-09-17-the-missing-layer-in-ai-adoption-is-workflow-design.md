@@ -1,5 +1,6 @@
 ---
 layout: post
+description: "Make AI adoption repeatable through workflow design: discover real pain, assign ownership, create contribution paths, and build useful habits."
 title: The Missing Layer in AI Adoption Is Workflow Design
 subtitle: Why useful AI spreads through pain discovery, ownership, contribution paths, and habit formation
 date: 2026-05-29 09:00:00 -0700

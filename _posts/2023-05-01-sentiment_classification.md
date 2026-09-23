@@ -1,5 +1,6 @@
 ---
 layout: post
+description: "Build a movie-review sentiment classifier from scratch in Python, with feature extraction, linear classification, and model evaluation."
 title: Some Toy Algorithms - Sentiment Classification
 subtitle: Implementing commonly used models from scratch
 ---

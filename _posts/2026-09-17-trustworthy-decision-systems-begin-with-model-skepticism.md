@@ -1,5 +1,6 @@
 ---
 layout: post
+description: "Validate decision models by testing assumptions, separating correlation from causation, and making uncertainty visible before acting on results."
 title: Trustworthy Decision Systems Begin With Model Skepticism
 subtitle: How to validate signals, separate mechanisms from artifacts, and make uncertainty useful
 date: 2026-03-18 09:00:00 -0700

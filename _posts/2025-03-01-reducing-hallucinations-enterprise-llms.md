@@ -1,5 +1,6 @@
 ---
 layout: post
+description: "How retrieval optimization, prompt engineering, and evaluation reduced enterprise LLM hallucinations without changing the underlying model."
 title: Reducing Hallucinations by 60% Without Changing the Model
 subtitle: Retrieval optimization, prompt engineering, and A/B testing for enterprise LLMs
 ---
